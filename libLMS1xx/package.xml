@@ -1,4 +1,5 @@
 <package>
+  <name>libLMS1xx</name>
   <description brief="libLMS1xx">
 
      Library for communicating with SICK LMS1xx.
@@ -6,11 +7,10 @@
   </description>
   <author>Konrad Banachowicz</author>
   <license>LGPL</license>
-  <review status="unreviewed" notes=""/>
   <url>http://github.com/konradb3/RCPRG-ros-pkg/wiki/libLMS1xx</url>
-	<export>
-  	<cpp lflags="-Wl,-rpath,${prefix}/libLMS1xx/lib -L${prefix}/libLMS1xx/lib -lLMS1xx" cflags="-I${prefix}/libLMS1xx/include"/>
-  </export>
+
+  <build_depend>roscpp</build_depend>
+  <run_depend>roscpp</run_depend>
 
 </package>
 
